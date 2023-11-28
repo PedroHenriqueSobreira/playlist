@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct musica {
+    char titulo[MAX_TITULO];
+    char artista[MAX_ARTISTA];
+};
+
+void editsong(struct musica *playlist, int index) {
+    printf("novo titulo: ");
+    scanf("%s", playlist[index].artista);
+
+    printf("informações da musica editadas com sucesso!\n");
+}
+
+int main() {
+    struct musica playlist[MAX_MUSICAS];
+    int numMusicas = 0;
+
+    int choice;
+    do {
+        printf("\nmenu:\n");
+        printf("1. adicionar musica\n");
+        printf("2. editar musica\n");
+        printf("3. sair\n");
+        prinf("Escolha a opção: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+            if (numMusicas < MAX_MUSICAS) {
+                printf("titulo da musica: ");
+            }
+        }
+    }
+}
